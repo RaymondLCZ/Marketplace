@@ -2,15 +2,14 @@ using Marketplace.EventSourcing;
 
 namespace Marketplace.Ads.Domain.Shared;
 
+/// <summary></summary>
+/// <remark>UserId 是 Value Object (值物件)，</remark>
 public class UserId : Value<UserId>
 {
     protected UserId(Guid value)
     {
         if (value == default)
-            throw new ArgumentNullException(
-                nameof(value),
-                "The Id cannot be empty"
-            );
+            throw new ArgumentNullException(nameof(value), "The Id cannot be empty");
 
         Value = value;
     }

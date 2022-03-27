@@ -13,6 +13,7 @@ protected AggregateId(Guid value)
 
     public Guid Value { get; }
 
+// 實作隱含轉換 implicit conversion，將 value 指派給 primitive type
     public static implicit operator Guid(AggregateId<T> self) => self.Value;
 
     public override string ToString() => Value.ToString();

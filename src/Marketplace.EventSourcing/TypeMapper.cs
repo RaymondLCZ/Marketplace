@@ -10,7 +10,7 @@ public static class TypeMapper
     static readonly Dictionary<string, Type> TypesByName
         = new Dictionary<string, Type>();
 
-    public static void Map(Type type, string name = null)
+    public static void Map(Type type, string? name = null)
     {
         if (IsNullOrWhiteSpace(name))
             name = type.FullName;

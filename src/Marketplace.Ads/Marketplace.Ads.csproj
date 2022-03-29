@@ -4,6 +4,7 @@
     <ProjectReference Include="..\Marketplace.Ads.Domain\Marketplace.Ads.Domain.csproj" />
     <ProjectReference Include="..\Marketplace.WebApi\Marketplace.WebApi.csproj" />
     <ProjectReference Include="..\Marketplace.Ads.Messages\Marketplace.Ads.Messages.csproj" />
+    <ProjectReference Include="..\Marketplace.RavenDb\Marketplace.RavenDb.csproj" />
   </ItemGroup>
 
   <ItemGroup>
